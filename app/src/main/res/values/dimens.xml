@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_video_avatar_height">90dp</dimen>
+    <dimen name="item_video_avatar_width">140dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="1000dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.example.unima_l003.demoyoutubeplayer.views.YoutubeFrameLayout
+        android:id="@+id/frame_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_play_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:textAppearance="@style/AppTheme.TextAppearance.Black"
+        android:textStyle="bold" />
+
+</LinearLayout>

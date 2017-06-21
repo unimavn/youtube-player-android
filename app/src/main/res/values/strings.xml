@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DemoYouTubePlayer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--Others-->
+    <string name="file_existing">has been downloaded</string>
+    <string name="download_question">This song has already been downloaded. Play the song now?</string>
+    <string name="file_downloading">File is being downloaded</string>
+    <string name="cannot_download_file">Cannot download file</string>
+    <string name="google_api_key">AIzaSyCtfDJ7HfO3FGrBBq4FRxxKBD6bXP9rX1g</string>
+    <string name="no_connection">No connection</string>
+    <string name="search_empty">No music found.</string>
+    <string name="try_again">Try again</string>
+    <string name="search_online">Search Online</string>
+</resources>
