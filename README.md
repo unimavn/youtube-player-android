@@ -27,10 +27,10 @@ _![device-2017-06-21-092603_1.png](https://bitbucket.org/repo/Ag677Bn/images/547
 
 ***
 # References#
-[YoutubeAPI](https://developers.google.com/youtube/documentation/)
-[Joda lib](http://www.joda.org/joda-time/)
-[Facebook fresco lib](http://frescolib.org/docs/)
-[Okhttp3 lib(https://square.github.io/okhttp/3.x/okhttp/)
+[YoutubeAPI ](https://developers.google.com/youtube/documentation/)
+[Joda lib ](http://www.joda.org/joda-time/)
+[Facebook fresco lib ](http://frescolib.org/docs/)
+[Okhttp3 lib](https://square.github.io/okhttp/3.x/okhttp/)
 
 ---
 
