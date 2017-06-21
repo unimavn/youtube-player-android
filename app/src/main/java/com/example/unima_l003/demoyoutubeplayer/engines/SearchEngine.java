@@ -21,10 +21,10 @@ import okhttp3.Response;
 public abstract class SearchEngine {
 
     private final int maximumPage;
-    protected int currentPage = 0;
+    private int currentPage = 0;
     private int countApi = 0;
 
-    public SearchEngine(int maximumPage) {
+    SearchEngine(int maximumPage) {
         this.maximumPage = maximumPage;
     }
 

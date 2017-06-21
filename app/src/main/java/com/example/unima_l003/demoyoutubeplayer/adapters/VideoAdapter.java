@@ -50,7 +50,7 @@ public class VideoAdapter extends NMAdapter<NMViewHolder> {
     private OnItemClickListener onItemClickListener;
     private Executor executor = Executors.newFixedThreadPool(5);
 
-    public VideoAdapter(List<Video> items) {
+    VideoAdapter(List<Video> items) {
         this.items = items;
     }
 
@@ -81,19 +81,19 @@ public class VideoAdapter extends NMAdapter<NMViewHolder> {
         this.onItemClickListener = onItemClickListener;
     }
 
-    public class VideoVH extends NMViewHolder {
+    class VideoVH extends NMViewHolder {
 
-        public SimpleDraweeView ivVideoAvatar;
-        public TextView tvTitle;
-        public TextView tvArtist;
-        public TextView tvTime;
-        public TextView tvDuration;
+        SimpleDraweeView ivVideoAvatar;
+        TextView tvTitle;
+        TextView tvArtist;
+        TextView tvTime;
+        TextView tvDuration;
 
-        public VideoVH(RecyclerView.Adapter<? extends NMViewHolder> adapter, ViewGroup parent) {
+        VideoVH(RecyclerView.Adapter<? extends NMViewHolder> adapter, ViewGroup parent) {
             this(adapter, parent, R.layout.list_item_video);
         }
 
-        public VideoVH(RecyclerView.Adapter<? extends NMViewHolder> adapter, ViewGroup parent, @LayoutRes int layout) {
+        VideoVH(RecyclerView.Adapter<? extends NMViewHolder> adapter, ViewGroup parent, @LayoutRes int layout) {
             super(adapter, parent, layout);
         }
 
@@ -149,7 +149,7 @@ public class VideoAdapter extends NMAdapter<NMViewHolder> {
         private class GetDurationTask extends AsyncTask<String, Void, String> {
             private String videoId;
 
-            public GetDurationTask(String videoId) {
+            GetDurationTask(String videoId) {
                 this.videoId = videoId;
             }
 
@@ -194,7 +194,7 @@ public class VideoAdapter extends NMAdapter<NMViewHolder> {
             }
         }
 
-        public String parseResponse(String data) {
+        String parseResponse(String data) {
             try {
                 JSONObject root = new JSONObject(data);
                 JSONArray array = root.optJSONArray("items");

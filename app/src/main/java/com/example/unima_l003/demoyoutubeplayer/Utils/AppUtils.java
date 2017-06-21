@@ -1,8 +1,5 @@
 package com.example.unima_l003.demoyoutubeplayer.Utils;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.ContextWrapper;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 
@@ -36,14 +33,4 @@ public class AppUtils {
         draweeView.setController(controller);
     }
 
-    public static Activity getActivityFromContext(Context context) {
-        if (context == null)
-            return null;
-        else if (context instanceof Activity)
-            return (Activity) context;
-        else if (context instanceof ContextWrapper)
-            return getActivityFromContext(((ContextWrapper) context).getBaseContext());
-
-        return null;
-    }
 }

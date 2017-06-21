@@ -25,12 +25,12 @@ import okhttp3.Request;
  */
 public class YEngine extends SearchEngine {
 
-    public static final String YOUTUBE_HOST = rb64("v02bj5ycpBXYlx2Zv92Zuc3d39yL6MHc0RHa"); //"https://www.googleapis.com/";
-    public static final String YOUTUBE_SEARCH = YOUTUBE_HOST + rb64("0VGcwlmbz1DdyFGc/g2YyFWZz9yM29SZiVHd19We") + "&key=%s&q=%s&maxResults=%s&pageToken=%s&relevanceLanguage=%s"; // youtube/v3/search?part=snippet
+    static final String YOUTUBE_HOST = rb64("v02bj5ycpBXYlx2Zv92Zuc3d39yL6MHc0RHa"); //"https://www.googleapis.com/";
+    private static final String YOUTUBE_SEARCH = YOUTUBE_HOST + rb64("0VGcwlmbz1DdyFGc/g2YyFWZz9yM29SZiVHd19We") + "&key=%s&q=%s&maxResults=%s&pageToken=%s&relevanceLanguage=%s"; // youtube/v3/search?part=snippet
 
     public static final String YOUTUBE_DURATION = "https://www.googleapis.com/youtube/v3/videos?id=%s&part=contentDetails&key=AIzaSyB-vE_PNo2_1o65I2etL3aITlKRYYhzeFs";
 
-    public static final String[] API_KEY =
+    static final String[] API_KEY =
                     {"AIzaSyA4F93yHRFHhLAAB0V1Gq5FwMLR7gyp1vA",
                     "AIzaSyB-vE_PNo2_1o65I2etL3aITlKRYYhzeFs",
                     "AIzaSyAiHmiWsHBbzoSojnV3kkQKsh0qNvQoTHg",
@@ -53,7 +53,7 @@ public class YEngine extends SearchEngine {
         Collections.shuffle(listApiKeys);
     }
 
-    public static String rb64(String input) {
+    private static String rb64(String input) {
         return new String(Base64.decode(new StringBuilder(input).reverse().toString(), 0));
     }
 

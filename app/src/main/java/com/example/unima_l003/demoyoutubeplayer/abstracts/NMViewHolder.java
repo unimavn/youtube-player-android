@@ -1,14 +1,11 @@
 package com.example.unima_l003.demoyoutubeplayer.abstracts;
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.LayoutRes;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.example.unima_l003.demoyoutubeplayer.Utils.AppUtils;
 
 
 /**
@@ -20,7 +17,7 @@ public abstract class NMViewHolder extends RecyclerView.ViewHolder {
     private final RecyclerView.Adapter<? extends NMViewHolder> adapter;
     private final Context context;
 
-    public NMViewHolder(RecyclerView.Adapter<? extends NMViewHolder> adapter, View itemView) {
+    private NMViewHolder(RecyclerView.Adapter<? extends NMViewHolder> adapter, View itemView) {
         super(itemView);
         this.adapter = adapter;
         this.context = itemView.getContext();
@@ -31,17 +28,10 @@ public abstract class NMViewHolder extends RecyclerView.ViewHolder {
         this(adapter, LayoutInflater.from(parent.getContext()).inflate(layout, parent, false));
     }
 
-    public RecyclerView.Adapter<? extends NMViewHolder> getAdapter() {
-        return adapter;
-    }
-
-    public final Context getContext() {
+    protected final Context getContext() {
         return context;
     }
 
-    public final Activity getActivity() {
-        return AppUtils.getActivityFromContext(context);
-    }
 
     protected abstract void initUI();
 

@@ -132,7 +132,7 @@ public class Video{
         this.image = image;
     }
 
-    public Date getDate() {
+    private Date getDate() {
         return date;
     }
 
@@ -140,7 +140,7 @@ public class Video{
         this.date = date;
     }
 
-    public String getUrl() {
+    private String getUrl() {
         return url;
     }
 
@@ -148,19 +148,19 @@ public class Video{
         this.url = url;
     }
 
-    public int getType() {
+    private int getType() {
         return type;
     }
 
-    public void setType(int type) {
+    private void setType(int type) {
         this.type = type;
     }
 
-    public int getViewCount() {
+    private int getViewCount() {
         return viewCount;
     }
 
-    public void setViewCount(int viewCount) {
+    private void setViewCount(int viewCount) {
         this.viewCount = viewCount;
     }
 

@@ -1,7 +1,6 @@
 package com.example.unima_l003.demoyoutubeplayer.managers;
 
 import android.os.AsyncTask;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
@@ -9,7 +8,6 @@ import com.example.unima_l003.demoyoutubeplayer.engines.SearchEngine;
 import com.example.unima_l003.demoyoutubeplayer.engines.YEngine;
 import com.example.unima_l003.demoyoutubeplayer.objects.Video;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +16,7 @@ import java.util.List;
  * Copyright 2015 Nikmesoft Company, Ltd. All rights reserved.
  */
 public class SearchManager {
-    public final int COUNT = 20;
+    private final int COUNT = 20;
     private final SearchEngine[] searchEngines = {new YEngine(10)};
     private String keyword;
     private Callback callback;
@@ -33,7 +31,6 @@ public class SearchManager {
 
     private SearchEngine[] getSearchEngines() {
         // do not create a new array here. it doesn't work
-        ArrayList<SearchEngine> ret = new ArrayList<SearchEngine>();
         return searchEngines;
     }
 
@@ -62,15 +59,11 @@ public class SearchManager {
             }
         };
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            searchTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, engine);
-        } else {
-            searchTask.execute(engine);
-        }
+        searchTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, engine);
 
     }
 
-    public SearchEngine getNext() {
+    private SearchEngine getNext() {
         for (SearchEngine engine : getSearchEngines()) {
             if (!engine.hasFinish()) {
                 return engine;
