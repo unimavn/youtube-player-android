@@ -3,11 +3,6 @@
 * This is an android application demo YouTube pattern android .
 * * *
 # Demo #
-![device-2017-06-21-092603_1_opt.png](https://bitbucket.org/repo/Ag677Bn/images/3942204717-device-2017-06-21-092603_1_opt.png)
-![device-2017-06-21-092718_2_opt.png](https://bitbucket.org/repo/Ag677Bn/images/3073729910-device-2017-06-21-092718_2_opt.png)
-![
-](https://bitbucket.org/repo/Ag677Bn/images/2855987200-device-2017-06-21-092754_3_opt.png)![device-2017-06-21-092824_4_opt.png](https://bitbucket.org/repo/Ag677Bn/images/3064827374-device-2017-06-21-092824_4_opt.png)
-![device-2017-06-21-092840_5_opt.png](https://bitbucket.org/repo/Ag677Bn/images/732341700-device-2017-06-21-092840_5_opt.png)
 
 
 # Features #
